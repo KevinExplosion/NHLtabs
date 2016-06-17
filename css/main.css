@@ -1,12 +1,69 @@
-h1 {
-  color: red;
+/*the "min-height" makes the HTML page take the entire viewport */
+/*the "height 100%" makes the body take the entire HTML page */
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  height: 100%;
+  background-image: url("../images/background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: grey;
 }
 
 .jsOn .tab-section {
   display: none;
 }
 
-.jsOff ul #tabs {
+.jsOn ul#tabs {
+  background: #f7f7f7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 1.5em;
+  margin: 1.5em 0 0 0;
+}
+
+.jsOn ul#tabs:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/* snippet of code to line up all the links in a single row */
+.jsOn ul#tabs li {
+  display: block;
+  float: left;
+}
+
+.jsOn ul#tabs a {
+  border-right: 1px solid #000;
+  color: #3683dc;
+  display: block;
+  padding: 0.5em 1.125em;
+  text-decoration: none;
+}
+
+.jsOn ul#tabs li:first-child a {
+  border-top-left-radius: 7px;
+}
+
+.jsOn ul#tabs a:hover {
+  background: #d2d2d2;
+}
+
+.jsOn .tab-section {
+  background: white;
+  color: #444;
+  padding: 2em;
+}
+
+.jsOn .tab-section h2 {
+  margin-top: 0;
+}
+
+.jsOff ul#tabs {
   line-height: 1.5;
   margin: 1.125em 0;
 }
