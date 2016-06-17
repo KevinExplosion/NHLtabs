@@ -2,6 +2,10 @@ h1 {
   color: red;
 }
 
+.jsOn .tab-section {
+  display: none;
+}
+
 .jsOff ul #tabs {
   line-height: 1.5;
   margin: 1.125em 0;
