@@ -63,6 +63,10 @@ body {
   margin-top: 0;
 }
 
+.jsOn ul#tabs a.current {
+  background: #a5d5ff;
+}
+
 .jsOff ul#tabs {
   line-height: 1.5;
   margin: 1.125em 0;
