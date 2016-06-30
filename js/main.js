@@ -9,5 +9,5 @@ $(document).ready(function() {
     $(this.hash).show();
     $(this).addClass('current');
     e.preventDefault();
-  });
+  }).filter(':first').click();
 });
