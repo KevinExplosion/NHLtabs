@@ -5,12 +5,33 @@ html {
   position: relative;
 }
 
+.pageHeader {
+  font-style: italic;
+  font-weight: bold;
+  background-color: #d2d2d2;
+  padding-left: 20px;
+}
+
+.NHL_shield {
+  height: 125px;
+  width: 100px;
+}
+
+.divisionHeader {
+  text-align: center;
+}
+
 body {
   height: 100%;
   background-image: url("../images/background.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: grey;
+}
+
+.infoLogo {
+  height: 250px;
+  width: 250px;
 }
 
 .jsOn .tab-section {
@@ -47,6 +68,8 @@ body {
 
 .jsOn ul#tabs li:first-child a {
   border-top-left-radius: 7px;
+  /*this fixes the weird margin issue I was having with the tabs*/
+  margin-left: -41px;
 }
 
 .jsOn ul#tabs a:hover {
